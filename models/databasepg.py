@@ -17,7 +17,7 @@ def connect():
     cur = conn.cursor()
     
 # execute a statement
-    cur.execute('SELECT created, temperature, humidity FROM testcapteur')
+    cur.execute('SELECT idcapteur, temperature, humidity FROM capteur')
 
     # display the PostgreSQL database server version
     db_version = cur.fetchall()
@@ -27,6 +27,4 @@ def connect():
     # except (Exception, psycopg2.DatabaseError) as error:
     #     print(error)
 
-    print(db_version)
-
-connect()
+    return db_version
