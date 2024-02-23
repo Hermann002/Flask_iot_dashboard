@@ -8,10 +8,10 @@ def connect():
     # connect to the PostgreSQL server
     print('Connecting to the PostgreSQL database...')
     conn = psycopg2.connect(
-    host="digishop.postgres.database.azure.com",
+    host="******.azure.com",
     database="iot_database",
     user="digipos",
-    password="postgres12@")
+    password="********")
     
     # create a cursor
     cur = conn.cursor()
