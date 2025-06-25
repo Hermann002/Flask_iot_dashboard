@@ -5,7 +5,7 @@ import pymongo
 import pandas as pd
 
 def connect():
-    uri = "mongodb://digiplusiot:J7MmhOUnUXAz60spo7Ysxh5QS8qPXLL7yzJl0P97WqSXgctg8GPmifF71IzlRq1ScPqIJWiAZU5YACDbgMLrTA==@digiplusiot.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@digiplusiot@"
+    uri = "<uri>"
 
     # Create a new client and connect to the server
     client = MongoClient(uri)
